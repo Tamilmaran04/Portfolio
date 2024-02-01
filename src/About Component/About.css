@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+main{
+    background-image: url("../imag/bg.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:80vh;
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.2);
+}
+.main__left{
+    position: relative;
+    top:10rem;
+    margin-left:4rem;
+}
+.main__left > h1 {
+    color:brown;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.main__left >  span {
+    font-family: 'Montserrat', sans-serif;
+    color:tomato;
+    margin-left:4rem;
+    font-size: 4rem;
+}
+.main__left > p{
+    color:brown;
+    margin:2rem 0 2rem 0;
+    letter-spacing:4px;
+    font-size:1.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.main__button{
+    display: flex;
+    margin-left:8rem;
+    align-items: center;
+    gap:40px;
+}
+.main__button > button{
+    padding:10px 30px;
+    border-radius:10px;
+    border: none;
+    background-color: brown;
+    color: white;
+    border: 1px solid rgb(78, 76, 76);
+}
+/* .main__button > .but{
+    padding:9px 45px;
+    background-color: transparent;
+    border: 1px solid white;
+} */
+.main__button > button > a{
+    text-decoration: none;
+    color:white;
+}
+.main__button > button > a:hover{
+    text-decoration: underline;
+    color:rgb(232, 219, 131);
+}
+@media(max-width:700px){
+    main{
+        background-image:none;
+        background: linear-gradient(to right,rgb(113, 112, 112),rgb(53, 50, 50));;
+        border: 1px solid white;  
+        height:70vh;
+    }
+    .main__left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main__left > h1 {
+        margin-right:10rem;
+        font-size: 1.8rem;
+        width:60%;
+    }
+    .main__left >  span {
+        font-size: 3rem;
+        margin-right:3rem;
+    }
+    .main__left > p{
+        letter-spacing:1px;
+        font-size:1.5rem;
+        margin-right:4rem;
+        width:100%;
+    }
+    .main__button{
+        margin-top: 2rem;
+        margin-right:12rem;
+        padding:10px;
+        width:60%;
+    }
+}
+
+@media(max-width:950px){
+    main{
+        background-image: url("../imag/lap.jpeg");
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        height:80vh;
+        box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.2);
+    }
+    .main__left > h1 {
+        color:tomato;
+    }
+    .main__left >  span {
+        color:tomato;
+    }
+    .main__left > p{
+        color:tomato;
+    }
+}

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+.Project__main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to right,rgb(113, 112, 112),rgb(53, 50, 50));
+    height:80vh;
+}
+.imgweb >img{
+    width:60%;
+    object-fit: contain;
+    background-size:contain;
+    margin-top: 4rem;
+    margin-left:14%;
+    border-radius: 3px;
+}
+.project{
+    display: flex;
+    flex-direction:column;
+    gap:2rem;
+    margin-top: 2rem;
+    margin-right:17%;
+    color: white;
+}
+.project > h1{
+    font-family:"Lato",sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.project > .para > p{
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.skills{
+    color:rgb(209, 147, 67);
+    width:40vh;
+    border-radius:40px;
+}
+.skills__html > .skills> .css-5xe99f-MuiLinearProgress-bar1{
+    background-color: orange;
+}
+.skills__css > .skills> .css-5xe99f-MuiLinearProgress-bar1{
+    background-color: rgb(0, 94, 255);
+}
+.skills__javascript > .skills> .css-5xe99f-MuiLinearProgress-bar1{
+    background-color: rgb(255, 200, 0);
+}
+.skills__reactjs > .skills> .css-5xe99f-MuiLinearProgress-bar1{
+    background-color: rgb(0, 204, 255);
+}
+
+@media(max-width:950px){
+    .imgweb >img{
+        display: none;
+    }
+    .project{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    .project > .para > p{
+        text-align: center;
+    }
+    .skills{
+        text-align: center;
+        margin-left:4rem;
+    }
+}
