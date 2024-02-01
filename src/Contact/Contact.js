@@ -31,9 +31,11 @@ const Contact = () => {
             <p><GitHubIcon />Github</p>
             <p><a href="https://github.com/Tamilmaran04">https://github.com/Tamilmaran04</a></p>
         </div>
+
         <div className='Copyright'>
             <p>&#169;Copy right</p>
         </div>
+        
         </div>
     </footer>
     </Element>
